@@ -14,7 +14,7 @@ You can git clone the CPGPLOT library from the corresponding public repository.
 
 ### What is this ANNONYMOUS repository for? ###
 
-* This repository sets up a number of dynamic models of consumer-resource interactions distributed across a network metatapopulation structure. Individual movement is implemented as a random walk betweeen connected patches. Both ODEs and Gillespie simulations (using a variety of optimized algorithms) are implemented. Consumer-resource interactions are modelled using a range of feeding dynamics, including HOLLING TYPE II (with the possibility of multiple resource types) and consumer interference. On average, several classic trophic functional responses emerge, including several versions of the Beddington-DeAngeles functional form. 
+* This repository sets up a number of dynamic models of consumer-resource interactions distributed across a network metatapopulation structure. Individual movement is implemented as a random walk betweeen connected patches. Both ODEs and Gillespie simulations (using a variety of optimized algorithms) are implemented. Consumer-resource interactions are modelled using a range of feeding dynamics, including HOLLING TYPE II (with the possibility of multiple resource types) and consumer interference. On average, several classic trophic functional responses emerge, including several versions of the Beddington-DeAngelis functional form. 
 
 * Version: 0.0.0.999
 * [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
@@ -32,7 +32,7 @@ The first two ones are basic GSL libraries. The following 5 are required to use 
 
 When you git clone the repository on your machine, you should do it from your home directory. As a result, the directory '~/ANNONYNOUS-REPO-OIKOS' will be created on your machine.
 
-If graphic libraries have been correctly installed, this should be enough to make all makefiles work out of the box. Remember though you require to have also git cloned my CPGPLOT repository on your machine. To be clear, you should end up with two directories:
+If graphic libraries have been correctly installed, this should be enough to make all makefiles work out of the box. Remember though you require to have also git cloned CPGPLOT repository on your machine. To be clear, you should end up with two directories:
 
 * -$ ./CPGPLOT
 * -$ ./ANNONYNOUS-REPO-OIKOS
@@ -44,8 +44,9 @@ both in you home directory.
 	+ #### 2. Install plplot library
 	+ #### 3. Install pgplot library
 	+ #### 4. git clone https://github.com/vankampen92/CPGPLOT.git
-	+ #### 5. git clone https://github.com/vankampen92/ANNONYMOUS-REPO-OIKOS.git
+	+ #### 5. git clone https://github.com/annonyauthor/ANNONYMOUS-REPO-OIKOS.git
 	+ #### 6. Tests:
+
 	In order to test if pgplot, plplot and CPGPLOT are correctly installed in your machine, you can expand the tar file PROJECT_CPGPLOT_EXAMPLES.tar, which is in the project root directory on your home directory. Then you will get the directory ~/PROJECT_CPGPLOT_EXAMPLES. In that directory, there is a simple example of how to use the CPGPLOT library. You build it by typing:
 
 		+ ~/PROJECT/CPGPLOT_EXAMPLES/make
@@ -58,7 +59,7 @@ both in you home directory.
 
 		+ ~/PROJECT/CPGPLOT_EXAMPLES/PLOT -G29 ?
 
-	and see the different available graphic formats in which plots can be saved. Notice that sometimes the value for these input arguments is overriden by the internal program code. When this happens, it is for a good reason. Please check the code to understand why and make moodgodfications at your own risk. Be creative.   
+and see the different available graphic formats in which plots can be saved. Notice that sometimes the value for these input arguments is overriden by the internal program code. When this happens, it is for a good reason. Please check the code to understand why and make moodgodfications at your own risk. Be creative.   
 
 	+ #### 7. Examples:
 	See, for instance, ./MODEL_CALCULATIONS/TEMPORAL_EVOLUTION/main.c, and follow the directions to compile and run the code:
@@ -74,7 +75,7 @@ both in you home directory.
   
 	The code depends on some auxiliary libraries in ./Library  and ./Definition_Error_Model subdirectories. You may notice that you need to generate these libraries before, and then execute the command 'make MODEL=DIFFUSION_HII_nD'. In principle, a recursive makefile does this job for you. However, if gcc does not find these libraries, they may have been accidentally deleted and you should build them back up again from sources. Also, the code is linked against R libraries.  You may remove these R links or install R in your system. I recommend this 2n option. This will allow you to create shared libraries that, then, can be called as standard R funcions from RStudio, for example.
 
-	The call on the 2nd line above generates a bunch of stochatic realizations (-tR 10) and presents a single output variable (-n 1), this is, the temporal evolution of the central cell of the 100 times 100 grid. Local populations thrive in the 10000 cells (-HM 10000), organized on a 1 times 1 squared grid (-HX 1 -HY 1, only a single patch in this case). The type of network in controled by the -y2 imput argument value. In this case, grid connections are Von Neumann with periodic boundary conditions (-y2 1), although this feature is not activated when the dynamics occurs in a single patch. 
+	The call on the 2nd line above generates a bunch of stochatic realizations (-tR 10) and presents a three output variables (-n 3). Local populations thrive in a single cells (-HM 1), organized on a 1 times 1 squared grid (-HX 1 -HY 1, only a single patch in this case). The type of network in controled by the -y2 imput argument value. In this case, grid connections are Von Neumann with periodic boundary conditions (-y2 1), although this feature is not activated when the dynamics occurs in a single patch. 
 
 ### Contribution guidelines ###
 
