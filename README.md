@@ -10,7 +10,7 @@ This is a numerical library for C and C++ programmers. It is free software under
 This is a set of functions written in C relying on cpgplot primitives from pgplot, and plplot. As a consequence, the CPGPLOT Graphix library, in turns, depends on:
 ### [pgplot](/http://www.astro.caltech.edu/~tjp/pgplot/)
 ### [plplot](http://plplot.sourceforge.net/)
-You can git clone the CPGPLOT library from my repository.
+You can git clone the CPGPLOT library from the corresponding public repository.
 
 ### What is this repository for? ###
 
