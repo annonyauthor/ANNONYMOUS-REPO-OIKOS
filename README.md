@@ -12,7 +12,7 @@ This is a set of functions written in C relying on cpgplot primitives from pgplo
 ### [plplot](http://plplot.sourceforge.net/)
 You can git clone the CPGPLOT library from the corresponding public repository.
 
-### What is this repository for? ###
+### What is this ANNONYMOUS repository for? ###
 
 * This repository sets up a number of dynamic models of consumer-resource interactions distributed across a network metatapopulation structure. Individual movement is implemented as a random walk betweeen connected patches. Both ODEs and Gillespie simulations (using a variety of optimized algorithms) are implemented. Consumer-resource interactions are modelled using a range of feeding dynamics, including HOLLING TYPE II (with the possibility of multiple resource types) and consumer interference. On average, several classic trophic functional responses emerge, including several versions of the Beddington-DeAngeles functional form. 
 
