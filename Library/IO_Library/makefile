@@ -3,7 +3,7 @@
 # =======================
 
 # Gnu C make cpgplot_GRID UTILS (libda_cpgplot_GRID.a)
-PROJECT_DIR=${HOME}/PROJECT_STOCHASTIC_DIFFUSION/
+PROJECT_DIR=${HOME}/ANNONYMOUS-REPO-OIKOS/
 LIB_DIR              = $(PROJECT_DIR)Library/IO_Library/
 RANDOM_DIR           = $(PROJECT_DIR)Library/GSL_RANDOM/
 LIB_OPT              = $(PROJECT_DIR)Library/Optimization_Library/
