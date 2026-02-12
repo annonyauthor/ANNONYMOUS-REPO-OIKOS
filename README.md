@@ -49,15 +49,15 @@ both in you home directory.
 
 	In order to test if pgplot, plplot and CPGPLOT are correctly installed in your machine, you can expand the tar file PROJECT_CPGPLOT_EXAMPLES.tar, which is in the project root directory on your home directory. Then you will get the directory ~/PROJECT_CPGPLOT_EXAMPLES. In that directory, there is a simple example of how to use the CPGPLOT library. You build it by typing:
 
-		+ ~/PROJECT/CPGPLOT_EXAMPLES/make
+		+ ~/CPGPLOT/CPGPLOT_EXAMPLES/make
 
 		and you will get the exectutable file PLOT. You may run the example with some command arguments (see main.c). You should get a graph with four different subplots. You may also type:
 
-		+ ~/PROJECT/CPGPLOT_EXAMPLES/PLOT -h
+		+ ~/CPGPLOT/CPGPLOT_EXAMPLES/PLOT -h
 
 		and see other available command line arguments. You may also type:
 
-		+ ~/PROJECT/CPGPLOT_EXAMPLES/PLOT -G29 ?
+		+ ~/CPGPLOT/CPGPLOT_EXAMPLES/PLOT -G29 ?
 
 and see the different available graphic formats in which plots can be saved. Notice that sometimes the value for these input arguments is overriden by the internal program code. When this happens, it is for a good reason. Please check the code to understand why and make moodgodfications at your own risk. Be creative.   
 
@@ -75,7 +75,7 @@ and see the different available graphic formats in which plots can be saved. Not
   
 	The code depends on some auxiliary libraries in ./Library  and ./Definition_Error_Model subdirectories. You may notice that you need to generate these libraries before, and then execute the command 'make MODEL=DIFFUSION_HII_nD'. In principle, a recursive makefile does this job for you. However, if gcc does not find these libraries, they may have been accidentally deleted and you should build them back up again from sources. Also, the code is linked against R libraries.  You may remove these R links or install R in your system. I recommend this 2n option. This will allow you to create shared libraries that, then, can be called as standard R funcions from RStudio, for example.
 
-	The call on the 2nd line above generates a bunch of stochatic realizations (-tR 10) and presents a three output variables (-n 3). Local populations thrive in a single cells (-HM 1), organized on a 1 times 1 squared grid (-HX 1 -HY 1, only a single patch in this case). The type of network in controled by the -y2 imput argument value. In this case, grid connections are Von Neumann with periodic boundary conditions (-y2 1), although this feature is not activated when the dynamics occurs in a single patch. 
+	The call on the 2nd line above generates a bunch of stochatic realizations (-tR 10) and presents a three output variables (-n 3), since in this case there are 3 different resource types. Local populations thrive in a single cells (-HM 1), organized on a 1 times 1 squared grid (-HX 1 -HY 1, only a single patch in this case). The type of network in controled by the -y2 imput argument value. In this case, grid connections are Von Neumann with periodic boundary conditions (-y2 1), although this feature is not activated when the dynamics occurs in a single patch. 
 
 ### Contribution guidelines ###
 
