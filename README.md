@@ -14,7 +14,7 @@ You can git clone the CPGPLOT library from my repository.
 
 ### What is this repository for? ###
 
-* This repository sets up a number of dynamic models of consumer-resource interactions distributed across a network metatapopulation structure. Individual movement is implemented as a random walk betweeen connected patches. Both ODEs and Gillespie simulations (using a variety of optimized algorithms) are implemented. Consumer-resource interactions are modelled using a range of feeding dynamics, including HOLLING TYPE II (with the possibility of multiple resource types) and consumer interference, which lead, on average, to classic trophic functional responses, including several versions of Beddington-DeAngels funcional form.   
+* This repository sets up a number of dynamic models of consumer-resource interactions distributed across a network metatapopulation structure. Individual movement is implemented as a random walk betweeen connected patches. Both ODEs and Gillespie simulations (using a variety of optimized algorithms) are implemented. Consumer-resource interactions are modelled using a range of feeding dynamics, including HOLLING TYPE II (with the possibility of multiple resource types) and consumer interference. On average, several classic trophic functional responses emerge, including several versions of the Beddington-DeAngeles functional form. 
 
 * Version: 0.0.0.999
 * [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
