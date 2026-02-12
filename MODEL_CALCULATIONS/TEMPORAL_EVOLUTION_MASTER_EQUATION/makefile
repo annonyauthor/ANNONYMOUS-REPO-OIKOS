@@ -15,8 +15,8 @@
 # the make file:
 # Make sure there in blank spaces after sub-directory definitions
 CPGPLOT=${HOME}/CPGPLOT/
-PROJECT_DIR=${HOME}/PROJECT_STOCHASTIC_DIFFUSION/
-INCLUDE_DIR=${HOME}/PROJECT_STOCHASTIC_DIFFUSION/Include/
+PROJECT_DIR=${HOME}/ANNONYMOUS-REPO-OIKOS/
+INCLUDE_DIR=${HOME}/ANNONYMOUS-REPO-OIKOS/Include/
 TIME_TREND_DIR=${PROJECT_DIR}Definition_Time_Trend_Dependence/
 IO_DIR=${PROJECT_DIR}Library/IO_Library/
 OPT_DIR= ${PROJECT_DIR}Library/Optimization_Library/
