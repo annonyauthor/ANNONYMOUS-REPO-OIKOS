@@ -1,7 +1,7 @@
 #include "HEADERS.h"
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 /*                                                                           */
-/*                            David Alonso, 2022 (c)                         */
+/*                            Anonymous Author, 2022 (c)                         */
 /*                                                                           */
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 #define HUMAN_CONSTANT_POPULATION

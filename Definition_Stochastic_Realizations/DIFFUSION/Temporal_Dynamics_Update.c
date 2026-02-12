@@ -1,6 +1,6 @@
 /* Important: Under Construction: Check updating, please!!!!!!!!!!!!!!!!!!!  */
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-/*                             David Alonso, 2010 (c)                        */
+/*                             Anonymous Author, 2010 (c)                        */
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 #include <MODEL.h>
 
