@@ -4,7 +4,7 @@
 #/*                                                                           */
 #/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 CPGPLOT=${HOME}/CPGPLOT/
-PROJECT_DIR=${HOME}/PROJECT_STOCHASTIC_DIFFUSION/
+PROJECT_DIR=${HOME}/ANNONYMOUS-REPO-OIKOS/
 INCLUDE_DIR=${HOME}${PROJECT_DIR}Include/
 TIME_TREND_DIR=${PROJECT_DIR}Definition_Time_Trend_Dependence/
 IO_DIR=${PROJECT_DIR}Library/IO_Library/
