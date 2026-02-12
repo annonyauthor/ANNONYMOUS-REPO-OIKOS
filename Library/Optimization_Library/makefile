@@ -5,7 +5,7 @@
 # Gnu C make cpgplot_GRID UTILS (libda_cpgplot_GRID.a)
 NR=NUMERICAL_RECIPES
 CPGPLOT=${HOME}/CPGPLOT/
-PROJECT_DIR=${HOME}/PROJECT_STOCHASTIC_DIFFUSION/
+PROJECT_DIR=${HOME}/ANNONYMOUS-REPO-OIKOS/
 NR_DIR               = ${PROJECT_DIR}Library/C_NumRecip/
 LIB_DIR              = ${PROJECT_DIR}Library/Optimization_Library/
 RANDOM_DIR           = ${PROJECT_DIR}Library/GSL_RANDOM/
