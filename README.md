@@ -30,7 +30,7 @@ Notice that the linking command from most makefiles contains, at least, the foll
 
 The first two ones are basic GSL libraries. The following 5 are required to use primitive plotting functions from the graphic libraries cpplot and plplot. The final two are mandatory when using higher-level plotting functions from the CPGPLOT Graphix library. All of them are usually required to produce a graphical output. However, the control variable (see any makefile) 'CPG" can also be set up to 'NON_CPG_REPRESENTATION' and, then, through conditional compilation, the same program is built to just run the numerical computations without graphics. In all cases, the output may be saved in files.
 
-When you git clone the repository on your machine, you should do it from your home directory. As a result, the directory '~/PROJECT_STOCHASTIC_DIFFUSION' will be created on your machine.
+When you git clone the repository on your machine, you should do it from your home directory. As a result, the directory '~/ANNONYNOUS-REPO-OIKOS' will be created on your machine.
 
 If graphic libraries have been correctly installed, this should be enough to make all makefiles work out of the box. Remember though you require to have also git cloned my CPGPLOT repository on your machine. To be clear, you should end up with two directories:
 
