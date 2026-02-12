@@ -14,7 +14,7 @@ You can git clone the CPGPLOT library from my repository.
 
 ### What is this repository for? ###
 
-* This repository sets up a number of dynamic models of consumer-resource interactions distributed across a network metatapopulation structure. Individual movement is implemented as a random walk betweeen connected patches. Both ODEs and Gillespie simulations are implemented.
+* This repository sets up a number of dynamic models of consumer-resource interactions distributed across a network metatapopulation structure. Individual movement is implemented as a random walk betweeen connected patches. Both ODEs and Gillespie simulations (using a variety of optimized algorithms) are implemented. Consumer-resource interactions are modelled using a range of feeding dynamics, including HOLLING TYPE II (with the possibility of multiple resource types) and consumer interference, which lead, on average, to classic trophic functional responses, including several versions of Beddington-DeAngels funcional form.   
 
 * Version: 0.0.0.999
 * [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
@@ -43,8 +43,8 @@ both in you home directory.
 	+ #### 1. Install GSL library
 	+ #### 2. Install plplot library
 	+ #### 3. Install pgplot library
-	+ #### 4. git clone https://github.com/vankampen92/CPGPLOT
-	+ #### 5. git clone https://github.com/vankampen92/PROJECT_STOCHASTIC_FUNCTIONAL_RESPONSES.git
+	+ #### 4. git clone https://github.com/vankampen92/CPGPLOT.git
+	+ #### 5. git clone https://github.com/vankampen92/ANNONYMOUS-REPO-OIKOS.git
 	+ #### 6. Tests:
 	In order to test if pgplot, plplot and CPGPLOT are correctly installed in your machine, you can expand the tar file PROJECT_CPGPLOT_EXAMPLES.tar, which is in the project root directory on your home directory. Then you will get the directory ~/PROJECT_CPGPLOT_EXAMPLES. In that directory, there is a simple example of how to use the CPGPLOT library. You build it by typing:
 
@@ -84,4 +84,4 @@ both in you home directory.
 
 ### Who do I talk to? ###
 code
-* Drop an email to David Alonso (<dalonso@ceab.csic.es>)
+* Drop an email to Annony (<annonyauthor@gmail.com>)
