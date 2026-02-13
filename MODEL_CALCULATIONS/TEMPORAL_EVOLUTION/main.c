@@ -41,24 +41,8 @@ gsl_rng * r; /* Global generator defined in main.c */
    3 species example:                                        (OUTPUT_VARIABLES_GENUINE will be 6) 
    .~$ ./DIFFUSION -y0 0 -y2 1 -HS 3 -HM 10000 -HX 100 -HY 100 -Hu 0.5 -n 1 -v0 15156 -G0 1 -G1 1 -tn 100 -t0 0.0 -t1 30.0 -t4 0 -tR 4 -xn 0 -xN 1000 -HN 1000 -G2 1 -G3 0.0 -G4 30.0 -G5 1 -G6 0.0 -G7 1100.0
 
-   
-   MacArthur and Rosenzweig (two species 3D, R, A, RA):
-   .~$ ./DIFFUSION_MR -y0 7 -y2 1 -HS 1 -HM 1 -HX 1 -HY 1 \
-                      -n 3 -v0 0 -v1 1 -v2 2 -G0 1 -G1 3 \
-                      -tn 100 -t0 0.0 -t1 40.0 -t4 0 -tR 10 -xn 0 -xN 50.0 -HN 50.0 \ 
-                      -G2 1 -G3 0.0 -G4 40.0 -G5 1 -G6 0.0 -G7 2000 \
-                      -H1 0.0 -HuR 0.0 -HuC 0.0 -H0 0.0 -H5 0.0 \
-                      -H4 25.0 -H1 0.0 -H6 5.0 -H9 17.0 -H10 5.0 -HK 2000.0
-
-   Coarse-grained 2D system (two species 1R and 1C):
-   .~$ ./DIFFUSION_1R1C_2D -y0 4 -y2 1 -HS 1 -HM 4 -HX 2 -HY 2 \ 
-                           -n 2 -v0 0 -v1 1 -G0 1 -G1 2 \
-                           -tn 100 -t0 0.0 -t1 10.0 -t4 0 -tR 4 -xn 0 -xN 50 -HN 50 \ 
-                           -G2 1 -G3 0.0 -G4 40.0 -G5 1 -G6 0.0 -G7 100.0 \
-                           -H0 0.01 -H5 0.01 -H6 0.5
-
+   Feeding experiments at a constant number of total consumers: 	
    MODEL = DIFFUSION_BD_2D
-   Feeding experiments at a constant number of total consumers: 
    .~$ ./DIFFUSION_BD_2D -y0 13 -y2 1 -HS 1 -HM 1 -HX 1 -HY 1 \
                          -n 2 -v0 0 -v1 1 -G0 1 -G1 2 \
                          -tn 50 -t0 0.0 -t1 1.5 -t4 0 -tR 10 -xn 0 -xN 20.0 \
@@ -99,7 +83,7 @@ Relevant input arguments for model DIFFUSION_HII_nD:
    Notice that for this model -H5 should be always zero (No immigration of consumers: No of CONSUMERS is constant). 
    -H11 and H12 [Xhi_C_0 and Eta_C_0 are not relevant here. They are only in models with predator interference]. 
   (see COMPILATION_OPTIMIZATION_LEVELS.sh for compilation optiopns)               
-   */
+*/
 
 int main(int argc, char **argv)
 {
